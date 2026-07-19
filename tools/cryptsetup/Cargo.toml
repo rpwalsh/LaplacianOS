@@ -1,0 +1,19 @@
+[package]
+name = "laplacianos-cryptsetup"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "cryptsetup"
+path = "src/main.rs"
+# Windows applies installer-elevation heuristics to executables whose names
+# contain "setup". The binary has no unit-test harness; library and integration
+# tests cover its reusable primitives without launching an elevated stub.
+test = false
+
+[dependencies]
+anyhow = "1"
+getrandom = "0.2"
+pbkdf2 = "0.12"
+sha2 = "0.10"
+subtle = "2.6"

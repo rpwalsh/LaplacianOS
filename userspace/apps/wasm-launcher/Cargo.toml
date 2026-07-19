@@ -1,0 +1,13 @@
+[package]
+name = "laplacianos-wasm-launcher"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[[bin]]
+name = "wasm-launcher"
+path = "src/main.rs"
+
+[dependencies]
+laplacianos-app-sdk = { path = "../../../sdk/app-sdk" }

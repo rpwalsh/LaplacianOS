@@ -1,0 +1,3 @@
+/* The workspace x86_64-unknown-none config injects -Tkernel/linker.ld.
+   Protected services supply their real layout through ../link.ld, so this
+   placeholder keeps the inherited path resolvable without affecting placement. */

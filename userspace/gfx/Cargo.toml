@@ -1,0 +1,13 @@
+[package]
+name = "laplacianos-gfx"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+# Software fallback path (debug only — never enabled in release builds).
+sw-fallback = []

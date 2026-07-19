@@ -1,0 +1,34 @@
+# Kernel-specific target and flags.
+# The kernel is built with: cargo build -p laplacianos-kernel --target x86_64-unknown-none \
+#   -Z build-std=core,compiler_builtins
+# The loader is built with: cargo build -p laplacianos-uefi-loader --target x86_64-unknown-uefi
+# Userspace crates build with the host target (for now, they are stubs).
+#
+# We do NOT set [build].target here because it would apply to all workspace
+# members, breaking the loader and userspace.
+
+[target.x86_64-unknown-none]
+rustflags = [
+  "-C", "relocation-model=static",
+  "-C", "force-frame-pointers=yes",
+  "-C", "link-arg=-Tkernel/linker.ld",
+  "-C", "link-arg=--gc-sections",
+  "-C", "panic=abort",
+  "-Z", "stack-protector=strong",
+]
+
+[target.aarch64-unknown-none]
+rustflags = [
+  "-C", "relocation-model=static",
+  "-C", "force-frame-pointers=yes",
+  "-C", "link-arg=-Tkernel/linker-aarch64.ld",
+  "-C", "link-arg=--gc-sections",
+  "-C", "panic=abort",
+  "-Z", "stack-protector=strong",
+]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

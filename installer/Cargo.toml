@@ -1,0 +1,14 @@
+[package]
+name = "laplacianos-installer"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "installer"
+path = "src/main.rs"
+# Windows treats test executables containing "installer" as elevation targets.
+# This utility has no unit-test harness; validate it through workspace checks.
+test = false
+
+[dependencies]
+anyhow = "1"

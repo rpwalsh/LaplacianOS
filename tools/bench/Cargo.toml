@@ -1,0 +1,15 @@
+[package]
+name = "laplacianos-bench"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "laplacianos_bench"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bench"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"

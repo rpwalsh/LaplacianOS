@@ -1,0 +1,13 @@
+[package]
+name = "laplacianos-ui-sdk"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[lib]
+name = "laplacianos_ui_sdk"
+path = "src/lib.rs"
+
+[dependencies]
+laplacianos-app-sdk = { path = "../app-sdk" }

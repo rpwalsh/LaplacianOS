@@ -1,0 +1,11 @@
+[package]
+name = "laplacianos-shell"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "laplacianos-shell"
+path = "src/main.rs"
+
+[dependencies]

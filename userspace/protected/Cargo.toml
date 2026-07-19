@@ -1,0 +1,32 @@
+[package]
+name = "laplacianos-protected-services"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+build = "build.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+codegen-units = 1
+lto = "thin"
+strip = "symbols"
+
+[dependencies]
+laplacianos-compositor = { path = "../compositor" }
+laplacianos-gfx = { path = "../gfx" }
+laplacianos-app-sdk = { path = "../../sdk/app-sdk" }
+laplacianos-ui-sdk = { path = "../../sdk/ui-sdk" }
+laplacianos-gl = { path = "../../sdk/gl-sdk" }
+laplacianos-graph-runtime = { path = "../graph-runtime" }
+laplacianos-trainer-core = { path = "../trainer-core" }
+libm = { version = "0.2", default-features = false }
+getrandom = { version = "0.2", default-features = false, features = ["custom"] }
+
+[[bin]]
+name = "cube"
+path = "src/bin/cube.rs"

@@ -1,0 +1,26 @@
+[package]
+name = "laplacianos-kernel"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[[bin]]
+name = "laplacianos-kernel"
+path = "src/main.rs"
+required-features = ["freestanding"]
+test = false
+
+[features]
+default = []
+freestanding = []
+boot-demos = ["freestanding"]
+host-test = []
+
+[dependencies]
+spin = { workspace = true }
+uart_16550 = { workspace = true }
+x86_64 = { workspace = true }
+bitflags = { workspace = true }
+object = { workspace = true }
+font8x8 = { workspace = true }

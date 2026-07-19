@@ -1,0 +1,28 @@
+# IDE and native build output
+.vs/
+.vscode/*.log
+/bin/
+/obj/
+*.vcxproj.user
+*.vcxproj
+*.slnx
+
+# Rust build artifacts
+target/
+**/target/
+
+# Captured runtime and verification output
+*.log
+*.out
+boot-run-current.txt
+boot-transcript.txt
+cmd3_output.txt
+host-test-check-current.txt
+host-test-check.txt
+modeld-check.txt
+
+# Generated archives and local inventory files
+*.zip
+metadata.json
+_ls.txt
+_write_makefile.py

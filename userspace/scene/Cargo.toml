@@ -1,0 +1,20 @@
+[package]
+name        = "laplacianos-scene"
+version     = "0.1.0"
+edition     = "2021"
+
+[dependencies]
+laplacianos-gfx = { path = "../gfx" }
+libm        = { version = "0.2", default-features = false }
+
+[lib]
+name = "laplacianos_scene"
+path = "src/lib.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = 3
+lto = true

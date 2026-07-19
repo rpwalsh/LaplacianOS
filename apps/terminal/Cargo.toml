@@ -1,0 +1,15 @@
+[package]
+name = "laplacianos-terminal"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "laplacianos-terminal"
+path = "src/main.rs"
+
+[dependencies]
+
+laplacianos-app-sdk = { path = "../../sdk/app-sdk" }
+laplacianos-ui-sdk  = { path = "../../sdk/ui-sdk"  }
+

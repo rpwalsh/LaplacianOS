@@ -1,0 +1,13 @@
+[package]
+name = "graphhash"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[lib]
+name = "graphhash"
+path = "src/lib.rs"
+
+[features]
+default = []

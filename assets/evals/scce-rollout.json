@@ -1,0 +1,71 @@
+{
+  "corpusFiles": [
+    {
+      "path": "$LaplacianosRoot\\docs\\ai-stack.md",
+      "alias": "laplacianos-ai-stack.md"
+    },
+    {
+      "path": "$LaplacianosRoot\\docs\\scce-post-llm-strategy.md",
+      "alias": "scce-post-llm-strategy.md"
+    },
+    {
+      "path": "$LaplacianosRoot\\assets\\config\\modeld.json",
+      "alias": "modeld.json"
+    },
+    {
+      "path": "$CastleHaleRoot\\src\\content\\library\\heterogeneousTemporalWalkEmbeddings.tsx",
+      "alias": "powerwalk-library.tsx"
+    },
+    {
+      "path": "$CastleHaleRoot\\src\\content\\library\\signalsIntelligencePrediction.tsx",
+      "alias": "signals-intelligence.tsx"
+    },
+    {
+      "path": "$CastleHaleRoot\\src\\content\\library\\graphKernelMethods.tsx",
+      "alias": "graph-kernel-methods.tsx"
+    }
+  ],
+  "cases": [
+    {
+      "id": "laplacianos_routing",
+      "query": "How does LaplacianOS modeld route AI requests and why is SCCE the default lane?",
+      "requireCitation": true,
+      "keywords": [
+        "SCCE",
+        "builtin",
+        "LaplacianOS"
+      ]
+    },
+    {
+      "id": "powerwalk_hierarchy",
+      "query": "How does PowerWalk differ from temporal node2vec?",
+      "requireCitation": true,
+      "keywords": [
+        "PowerWalk",
+        "node2vec",
+        "type",
+        "lambda"
+      ]
+    },
+    {
+      "id": "signals_operator",
+      "query": "What is the typed temporal scoring primitive in the signals intelligence program?",
+      "requireCitation": true,
+      "keywords": [
+        "operator",
+        "temporal",
+        "predictive"
+      ]
+    },
+    {
+      "id": "post_llm_thesis",
+      "query": "Why is SCCE a post-LLM architecture instead of just a smaller LLM?",
+      "requireCitation": true,
+      "keywords": [
+        "memory",
+        "graph",
+        "provenance"
+      ]
+    }
+  ]
+}

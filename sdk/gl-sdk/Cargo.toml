@@ -1,0 +1,21 @@
+[package]
+name = "laplacianos-gl"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[lib]
+name = "laplacianos_gl"
+path = "src/lib.rs"
+
+[dependencies]
+libm = { version = "0.2", default-features = false }
+font8x8 = { version = "0.3", default-features = false, features = ["unicode"] }
+graphhash = { path = "../graphhash" }
+
+[features]
+default = []
+
+# The crate is no_std but uses alloc (Vec, Box, etc.) which is provided
+# by the kernel build-std chain at link time.

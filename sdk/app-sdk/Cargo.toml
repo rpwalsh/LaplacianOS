@@ -1,0 +1,16 @@
+
+[package]
+name = "laplacianos-app-sdk"
+version = "0.1.0"
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+publish = false
+
+[lib]
+name = "laplacianos_app_sdk"
+path = "src/lib.rs"
+
+
+[dependencies]
+libm = { version = "0.2", default-features = false }
+

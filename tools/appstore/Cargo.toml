@@ -1,0 +1,15 @@
+[package]
+name = "laplacianos-appstore"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "gps"
+path = "src/main.rs"
+
+[dependencies]
+laplacianos-app-sdk = { path = "../../sdk/app-sdk" }
+laplacianos-ui-sdk  = { path = "../../sdk/ui-sdk"  }
+anyhow = "1"
+laplacianos-tool-sdk = { path = "../../sdk/tool-sdk" }
+hex = "0.4"

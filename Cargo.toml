@@ -1,0 +1,69 @@
+[workspace]
+resolver = "2"
+# Only list crates that exist on disk. Phantom members cause cargo to fail.
+# The kernel and loader have different --target requirements, so we use
+# default-members = ["kernel"] and build the loader explicitly.
+members = [
+  "kernel",
+  "boot/uefi-loader",
+  "userspace/gfx",
+  "userspace/scene",
+  "userspace/compositor",
+  "userspace/graph-runtime",
+  "userspace/trainer-core",
+  "userspace/init",
+  "userspace/servicemgr",
+  "userspace/artifactsd",
+  "userspace/sysd",
+  "userspace/trainerd",
+  "tools/pkgmgr",
+  "userspace/shell",
+  "userspace/greeter",
+  "apps/terminal",
+  "apps/files",
+  "apps/settings",
+  "apps/editor",
+  "apps/browser-lite",
+  "apps/ai-console",
+  "apps/ai-air-hockey",
+  "apps/shell3d",
+  "sdk/app-sdk",
+  "sdk/ui-sdk",
+  "sdk/graphhash",
+  "sdk/gl-sdk",
+  "sdk/graph-sdk",
+  "sdk/tool-sdk",
+  "sdk/wasm-sdk",
+  "userspace/apps/wasm-launcher",
+  "tools/appstore",
+  "tools/cryptsetup",
+  "tools/bench",
+  "installer",
+  "tools/fuzz",
+  "tools/oem-image",
+]
+exclude = [
+  "userspace/protected",
+  # Host-build graphd/modeld are retained only as protocol fixtures. The
+  # protected ring-3 binaries are the sole production services.
+  "userspace/graphd",
+  "userspace/modeld",
+]
+default-members = ["kernel"]
+
+[workspace.package]
+edition = "2024"
+license = "PolyForm-Noncommercial-1.0.0"
+authors = ["Walsh Technical Group"]
+
+[workspace.dependencies]
+anyhow = "1"
+thiserror = "2"
+bitflags = "2"
+log = "0.4"
+spin = "0.9"
+uart_16550 = "0.3"
+x86_64 = { version = "0.15", default-features = false, features = ["instructions", "abi_x86_interrupt"] }
+object = { version = "0.36", default-features = false, features = ["read", "elf"] }
+uefi = { version = "0.30", features = ["alloc", "global_allocator", "panic_handler"] }
+font8x8 = { version = "0.3", default-features = false, features = ["unicode"] }
