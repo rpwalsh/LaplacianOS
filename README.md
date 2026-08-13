@@ -79,21 +79,15 @@ their source equations and independent numerical validation.
 
 ## License
 
-LaplacianOS is source-available under the PolyForm Noncommercial License 1.0.0.
+LaplacianOS is proprietary and source-available for inspection only. No
+license is granted to use, copy, modify, distribute, or create derivative
+works from this software except under a separate written agreement with
+Ryan P. Walsh.
 
-The public license permits qualifying noncommercial use, study, modification,
-and redistribution under its terms. It does not authorize commercial use.
-
-Any commercial use requires a separate written license obtained directly from
-Ryan P. Walsh. Commercial licensing inquiries may be made through
+Licensing inquiries may be made through
 [LinkedIn](https://www.linkedin.com/in/uiarchitect/) or the
 [LaplacianOS GitHub issue tracker](https://github.com/rpwalsh/LaplacianOS/issues).
+Contacting the licensor does not itself grant permission; rights are granted
+only through a separate executed written agreement.
 
-Contacting the licensor does not itself grant permission. Commercial rights are
-granted only through a separate executed written agreement.
-
-See:
-
-- `LICENSE`
-- `NOTICE`
-- `COMMERCIAL-LICENSING.md`
+See `LICENSE` and `NOTICE`.
