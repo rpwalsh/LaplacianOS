@@ -85,9 +85,9 @@ The public license permits qualifying noncommercial use, study, modification,
 and redistribution under its terms. It does not authorize commercial use.
 
 Any commercial use requires a separate written license obtained directly from
-Sarah Walsh. Commercial licensing inquiries may be made through
-[LinkedIn](https://www.linkedin.com/in/devgrrl/) or the
-[LaplacianOS GitHub issue tracker](https://github.com/devgrrl/LaplacianOS/issues).
+Ryan P. Walsh. Commercial licensing inquiries may be made through
+[LinkedIn](https://www.linkedin.com/in/uiarchitect/) or the
+[LaplacianOS GitHub issue tracker](https://github.com/rpwalsh/LaplacianOS/issues).
 
 Contacting the licensor does not itself grant permission. Commercial rights are
 granted only through a separate executed written agreement.
